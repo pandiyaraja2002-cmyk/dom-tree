@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h2 id="main">Welcome to my page</h2>
+
+    
+    <p class="para"> paragraph1 with content box</p>
+    <p class="para"> paragraph2 with content box</p>
+    <p class="para"> paragraph3 with content box</p>
+
+    
+    <button id="mybtn" onclick="button()" >
+        getElementById
+    </button>
+    <button id="mybtn1" onclick="button1()">
+        useQuerrySelector
+    </button>
+    <button id="mybtn2" onclick="button2()">querySelectorAll</button>
+    
+    <!-- <script src="looping.js">
+        function changetext(abc) {
+            document.getElementById("mybtn").innerText = abc;
+        }
+    </script> -->
+    <script>
+        // function useGetElementbyId(){
+        //     const text= document.getElementById("mybtn");
+        //     text.textcontent=("text was changed")
+
+        // }
+        function button(){
+            const pandi = document.getElementById("main");
+            pandi.textContent = "change the text by using getelement by id";
+        }
+        function button1(){
+            const joe =document.querySelector(".para");
+            joe.textContent = "change to allow always";
+        }
+
+        function button2()
+        {
+            const sanjai = document.querySelectorAll(".para");
+            
+            sanjai.forEach((p , i) => {
+                p.textContent= 'parama  padi da';
+            })
+        }
+
+
+
+
+    </script>
+</body>
+</html>
